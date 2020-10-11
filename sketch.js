@@ -11,7 +11,7 @@ stimg = loadImage("stop.png")
 }
 
 function setup(){
-    createCanvas(400,400); 
+    createCanvas(displayWidth,displayHeight); 
     //To use angle in Degrees
     angleMode(DEGREES); 
     sec=0
@@ -29,13 +29,13 @@ function draw(){
     sc = second();
 
     if(gameState === 0){
-        start = createSprite(100,300,100,100)
+        start = createSprite(displayWidth/4,displayHeight/1.33,100,100)
         start.addImage(simg)
         start.scale = 0.1
-        stop = createSprite(300,300,100,100)
+        stop = createSprite(displayWidth/1.33,displayHeight/1.33,100,100)
         stop.addImage(stimg)
         stop.scale = 0.1
-        reset = createSprite(215,100,100,10)
+        reset = createSprite(displayWidth/1.86,displayHeight/4,100,10)
         reset.addImage(rimg)
         reset.scale = 0.2
         sec = sec
@@ -77,7 +77,7 @@ sec = 0
             }
 fill(255)
     //text("time   "+hr+":"+mn+":"+sc,200,200)
-    text(+hrs+":"+min+":"+sec,200,200)
+    text(+hrs+":"+min+":"+sec,displayWidth/2,displayHeight/2)
 
     drawSprites()
 }
