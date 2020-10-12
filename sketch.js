@@ -22,7 +22,7 @@ function setup(){
     istart.visible = false
     istop = createSprite(300,300,200,200)
     istop.visible = false
-    ireset = createSprite(215,100,200,50)
+    ireset = createSprite(215,100,400,200)
     ireset.visible = false
 
 }
