@@ -30,13 +30,13 @@ function draw(){
 
     if(gameState === 0){
         start = createSprite(displayWidth/4,displayHeight/1.33,100,100)
-        //start.addImage(simg)
+        start.addImage(simg)
         start.scale = 0.1
         stop = createSprite(displayWidth/1.33,displayHeight/1.33,100,100)
-       // stop.addImage(stimg)
+        stop.addImage(stimg)
         stop.scale = 0.1
-        reset = createSprite(displayWidth/1.86,displayHeight/4,100,100)
-        //reset.addImage(rimg)
+        reset = createSprite(displayWidth/1.86,displayHeight/4,100,10)
+        reset.addImage(rimg)
         reset.scale = 0.2
         sec = sec
     }
@@ -78,8 +78,8 @@ sec = 0
 fill(255)
     //text("time   "+hr+":"+mn+":"+sc,200,200)
     text(+hrs+":"+min+":"+sec,displayWidth/2,displayHeight/2)
-    text("start",displayWidth/4,displayHeight/1.33)
+    /*text("start",displayWidth/4,displayHeight/1.33)
     text("stop",displayWidth/1.33,displayHeight/1.33)
-    text("reset",displayWidth/1.86,displayHeight/4)
+    text("reset",displayWidth/1.86,displayHeight/4)*/
     drawSprites()
 }
